@@ -1,9 +1,9 @@
 import { Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
-import { styles } from '@/styles/_joinstyle';
+import { styles } from '@/styles/_join';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import { HEROLOGOGREEN } from '@/constants';
+import { FACEBOOKLOGO, GOOGLELOGO, HEROLOGOGREEN } from '@/constants';
 
 export default function Index() {
   const router = useRouter();
@@ -58,7 +58,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require('@/assets/images/google.png')} />
+              <Image source={GOOGLELOGO} />
               <Text style={styles.secondaryButtonText}>
                 Continue with Google
               </Text>
@@ -73,7 +73,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require('@/assets/images/facebook.png')} />
+              <Image source={FACEBOOKLOGO} />
               <Text style={styles.secondaryButtonText}>
                 Continue with Facebook
               </Text>
