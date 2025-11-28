@@ -5,7 +5,7 @@ import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { FACEBOOKLOGO, GOOGLELOGO, HEROLOGOGREEN } from '@/constants';
 
-export default function Index() {
+export default function Join() {
   const router = useRouter();
   return (
     <SafeAreaProvider>
